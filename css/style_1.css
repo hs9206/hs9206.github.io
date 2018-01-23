@@ -1148,6 +1148,11 @@ ul li {
   width: 100%;
   text-align: center;
 }
+.top_qie .category-count{
+  margin-left:5px;
+  font-weight: bold;
+  color: #81a849;
+}
 .top_qie a {
   display: inline-block;
   font-size: 14px;
@@ -1197,6 +1202,7 @@ ul li {
   vertical-align: middle;
   margin: auto;
   transition: 0.3s;
+  border-radius: 50%;
 }
 .news_zi_ul li .news_left .pic i {
   display: block;

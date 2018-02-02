@@ -1317,13 +1317,13 @@ ul li {
 .news_show .s_img {
   margin-bottom: 30px;
 }
-.news_show .s_img .pic {
+.news_show  .pic {
   width: 48%;
   float: left;
   margin-right: 2%;
   position: relative;
 }
-.news_show .s_img .pic i {
+.news_show  .pic i {
   display: block;
   padding-bottom: 65%;
 }

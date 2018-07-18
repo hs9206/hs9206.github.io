@@ -358,8 +358,8 @@ ul li {
   margin: auto;
   text-align: center;
   color: #666666;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 32px;
   background: url(../images/xie_xian.png) repeat-x bottom;
   padding-bottom: 10px;
 }
@@ -528,6 +528,8 @@ ul li {
   text-align: left;
   max-height: 142px;
   overflow: hidden;
+  font-size: 16px;
+  line-height: 1.8;
 }
 .syzz .syzz_con .right .pr_ne {
   font-size: 14px;

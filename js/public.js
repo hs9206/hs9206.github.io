@@ -39,6 +39,14 @@ $(function() {
         autoplaySpeed:3000,
     });
 
+    $('.testimonials').slick({
+		dots: true,
+        autoplay:true,
+        //slidesToShow:2,
+        arrows:false, 
+        autoplaySpeed:3000,
+    });
+	 
 
 		$(".links").hover(function(){
 			$(".links ul").slideDown(500)

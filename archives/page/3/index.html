@@ -313,20 +313,13 @@
 <!--placeholder-->
 <script src="/js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-  $(function(){ $('input, textarea').placeholder(); });
-
-	function is_weixin() {
-	    var ua = navigator.userAgent.toLowerCase();
-	    if (ua.match(/MicroMessenger/i) == "micromessenger") {
-	        return true;
-	    } else {
-	        return false;
-	    }
-	}
-	var isWeixin = is_weixin();
-	if (isWeixin) {
+	$(function(){ $('input, textarea').placeholder(); });
+	
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.match(/MicroMessenger/i) == "micromessenger") {
 	    $(".header_zi").hide();
-	}
+	    $(".home_p").hide();
+	} 
 
 </script>
 

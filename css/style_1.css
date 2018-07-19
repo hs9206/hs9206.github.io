@@ -104,7 +104,22 @@ ul li {
 }
 @media (max-width: 1000px) {
   .home_p {
-    position: relative;
+    position: fixed;
+    border-top: 1px solid #ccc;
+    bottom:0px;
+    background: url(../images/bg.png);
+  }
+}
+.header_zi{
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .header_zi{
+    position: fixed;
+    border-top: 1px solid #ccc;
+    bottom:0px;
+    background: url(../images/bg.png);
   }
 }
 .phone-nav {
@@ -134,7 +149,7 @@ ul li {
   width: 98%;
   max-width: 1240px;
   margin: 0px auto 15px;
-  padding: 15px 0px 0px;
+  padding: 15px 0px 0px;  
 }
 @media (max-width: 1000px) {
 }
@@ -2129,6 +2144,6 @@ p.text-left{
   
   padding:0 5px;
 }
-.testimonials .slick-dots li button{
-  color:#81a849;
+.testimonials .slick-dots button{
+  background:#81a849;
 }

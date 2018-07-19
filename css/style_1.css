@@ -2129,3 +2129,6 @@ p.text-left{
   
   padding:0 5px;
 }
+.testimonials .slick-dots li button{
+  color:#81a849;
+}

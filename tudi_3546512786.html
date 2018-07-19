@@ -58,7 +58,15 @@
              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/farmsharing/index.html">共享农庄</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/blockchain/index.html">区块链</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/policy/index.html">政策解读</a></li></ul>
           </li>
           <li><a href="/contact.html"  >联系我们</a></li>
-          <li><a href="####">项目计划书</a></li>
+          <li>
+            <span>
+              <span class="er_a">
+                <!--img src="http://tudi.weibo.hn.cn/static/images/picture/er.png" alt="" class="one_img"-->
+                流转服务
+                <img src="http://tudi.weibo.hn.cn/static/images/picture/erwei.png" alt="" class="er_img" style="display: none;z-index: 999;position: fixed;">
+              </span>
+            </span>
+          </li>
         </ul>
        </nav>
        <div class="search">
@@ -175,7 +183,7 @@
       <ul>
         <li><a href="/index.html"  >首页</a></li>
         <li><a href="/about.html"  >平台介绍</a></li>
-        <li><a href="/farmsharing.html"  >共享农庄</a>
+        <li><a href="/farmsharing.html"  >业务案例</a>
           <ul>
             
               <li><a href="/farmsharing.html"> 三门坡地块 </a></li>
@@ -188,12 +196,11 @@
             
           </ul>
         </li>
-        <li><a href="/fulltrip.html"  >全域旅居</a></li>
         <li><a href="/archives/"  class="active" >新闻动态</a>
            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/farmsharing/index.html">共享农庄</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/blockchain/index.html">区块链</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/policy/index.html">政策解读</a></li></ul>
         </li>
         <li><a href="/contact.html"  >联系我们</a></li>
-        <li><a href="####">白皮书</a></li>
+        <li><a href="####">流转服务</a></li>
       </ul>
   </nav>
 
@@ -216,6 +223,20 @@
 <script src="/js/jquery.placeholder.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
   $(function(){ $('input, textarea').placeholder(); });
+
+	function is_weixin() {
+	    var ua = navigator.userAgent.toLowerCase();
+	    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+	        return true;
+	    } else {
+	        return false;
+	    }
+	}
+	var isWeixin = is_weixin();
+	if (isWeixin) {
+	    $(".header_zi").hide();
+	}
+
 </script>
 
 <!--<script src="/js/bootstrap.min.js"></script>-->

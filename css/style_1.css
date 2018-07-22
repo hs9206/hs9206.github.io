@@ -1070,7 +1070,7 @@ ul li {
 .comfor_con .zx_fang .f_xiao {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 8px;
 }
 .comfor_con .zx_fang .f_xiao div {
   position: relative;
@@ -1094,7 +1094,7 @@ ul li {
 .comfor_con .zx_fang .f_xiao div a {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #81a849;
   color: #666666;
   line-height: 40px;
   font-size: 16px;
@@ -2126,23 +2126,22 @@ p.text-left{
 }
 
 .testimonials .item{
-  font-size:1.8em;
+  font-size:18px;
   padding:0 15px 40px;
 }
-.testimonials .quote_big{
-  font-size:2.2em;
 
+@media (max-width: 1000px){
+  .testimonials .item{
+    font-size:12px;
+  }
 }
-.testimonials .quote_test{
-  margin-top:-2em;
-  margin-left:3em;
-}
-.testimonials .quote_test p{
+
+.testimonials  p{
   text-align:right;
-  color:#999;
+  color:#81a849;
   letter-spacing:4px;
 }
-.testimonials .quote_test b{
+.testimonials  b{
   
   padding:0 5px;
 }

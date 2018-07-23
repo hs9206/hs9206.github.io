@@ -155,7 +155,20 @@ $(function() {
         //初始化热力图背景数据
         var mapvLayer = new mapv.baiduMapLayer(map, dataSet, options);
 
+    	var marker = new BMap.Marker(initpoint);  // 创建标注
+		map.addOverlay(marker);              // 将标注添加到地图中
+		marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+
         var Uarry=$(".f_xiao a");//获取所有的a元素
+
+        Uarry.each(function(){
+        	localinfo = $(this).attr("data-point").split(",");
+        	var bmap_point = new BMap.Point(localinfo[0] , localinfo[1]);			
+
+			var marker = new BMap.Marker(bmap_point);  // 创建标注
+			map.addOverlay(marker);              // 将标注添加到地图中
+			marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+        });
 
 
 		// On After slide change
@@ -163,15 +176,16 @@ $(function() {
 			var Tresult=Uarry.eq(currentSlide).text(); //获取标题
 			var landPoint = Uarry.eq(currentSlide).attr("data-point").split(",");
 			var projectNO = Uarry.eq(currentSlide).attr("data-no");
-			console.log(projectNO + '---'+  nextSlide + Tresult + landPoint );
+			//console.log(projectNO + '---'+  nextSlide + Tresult + landPoint );
 			var bmap_point = new BMap.Point(landPoint[0] , landPoint[1]);			
 
-			var marker = new BMap.Marker(bmap_point);  // 创建标注
-			map.addOverlay(marker);              // 将标注添加到地图中
-			marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+			// var marker = new BMap.Marker(bmap_point);  // 创建标注
+			// map.addOverlay(marker);              // 将标注添加到地图中
+			// marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
 			var opts = {
 				width : 240,     // 信息窗口宽度
 				height: 90,     // 信息窗口高度
+				offset: {width: -5 , height: -40 },
 				title : "<b>"+Tresult+ "</b>" , // 信息窗口标题
 			}
 			var infoWindow = new BMap.InfoWindow(projectNO + "<br>地址：海南省海口市长堤路爱力大厦<br> 电话（微信同号）:180 7890 4890", opts);  // 创建信息窗口对象 
